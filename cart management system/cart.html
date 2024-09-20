@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart system</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+  
+   <div class ="btn" > <h1>Cart Management</h1>
+
+    <button class="button" onclick="addToCart({id: 1, name: 'Sample Product', quantity: 1})">Add Product to Cart</button>
+    <button class="button" onclick="deleteProductFromCart(1)">Delete Product from Cart</button>
+    <button class="button" onclick="increaseProductQuantity(1)">Increase Product Quantity</button>
+    <button class="button" onclick="reduceProductQuantity(1)">Reduce Product Quantity</button>
+    <button class="button" onclick="editProductInCart(1, 5)">Edit Product Quantity (Set to 5)</button>
+
+    <h2>Cart Items:</h2>
+    <div id="cart-items">
+    </div>
+</div>
+    <div id="product-list"></div>
+
+    <script src="cart.js"></script>
+    
+</body>
+</html>
